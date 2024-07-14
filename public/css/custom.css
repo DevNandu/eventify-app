@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    flex-shrink: 0;
+}
+
+.content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.container {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.table-responsive {
+    flex: 1 1 auto;
+}
+
+.pagination {
+    justify-content: center;
+}
+
+.pagination .page-item .page-link {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+    margin: 0 2px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.sort-asc::after {
+    content: ' \25B2';
+}
+
+.sort-desc::after {
+    content: ' \25BC';
+}
